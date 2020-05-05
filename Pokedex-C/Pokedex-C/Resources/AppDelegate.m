@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+//For test
+#import "DVMPokemonController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+#pragma mark - For Testing
+//    [DVMPokemonController fetchPokemonForSearchTerm:(@"12") completion:^(DVMPokemon *pokemon) {
+//        NSLog(@"%@",pokemon.spritePath);
+//    }];
+
     return YES;
 }
 

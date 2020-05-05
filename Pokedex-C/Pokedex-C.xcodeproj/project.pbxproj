@@ -13,6 +13,9 @@
 		FBCB8F9C24611782001D8C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCB8F9B24611782001D8C7C /* Assets.xcassets */; };
 		FBCB8F9F24611782001D8C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBCB8F9D24611782001D8C7C /* LaunchScreen.storyboard */; };
 		FBCB8FA224611782001D8C7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCB8FA124611782001D8C7C /* main.m */; };
+		FBCB8FAF24611FEB001D8C7C /* DVMPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCB8FAE24611FEB001D8C7C /* DVMPokemon.m */; };
+		FBCB8FB2246122FF001D8C7C /* DVMPokemonController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCB8FB1246122FF001D8C7C /* DVMPokemonController.m */; };
+		FBCB8FB524612ABD001D8C7C /* DVMPokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB8FB424612ABD001D8C7C /* DVMPokemonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		FBCB8F9E24611782001D8C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBCB8FA024611782001D8C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBCB8FA124611782001D8C7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBCB8FAD24611FEB001D8C7C /* DVMPokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMPokemon.h; sourceTree = "<group>"; };
+		FBCB8FAE24611FEB001D8C7C /* DVMPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMPokemon.m; sourceTree = "<group>"; };
+		FBCB8FB0246122FF001D8C7C /* DVMPokemonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMPokemonController.h; sourceTree = "<group>"; };
+		FBCB8FB1246122FF001D8C7C /* DVMPokemonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMPokemonController.m; sourceTree = "<group>"; };
+		FBCB8FB324612ABD001D8C7C /* Pokedex-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pokedex-C-Bridging-Header.h"; sourceTree = "<group>"; };
+		FBCB8FB424612ABD001D8C7C /* DVMPokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVMPokemonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +102,8 @@
 		FBCB8FAA24611EC1001D8C7C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FBCB8FB424612ABD001D8C7C /* DVMPokemonViewController.swift */,
+				FBCB8FB324612ABD001D8C7C /* Pokedex-C-Bridging-Header.h */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -100,6 +111,8 @@
 		FBCB8FAB24611ED3001D8C7C /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FBCB8FB0246122FF001D8C7C /* DVMPokemonController.h */,
+				FBCB8FB1246122FF001D8C7C /* DVMPokemonController.m */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -107,6 +120,8 @@
 		FBCB8FAC24611EDD001D8C7C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FBCB8FAD24611FEB001D8C7C /* DVMPokemon.h */,
+				FBCB8FAE24611FEB001D8C7C /* DVMPokemon.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -137,11 +152,13 @@
 		FBCB8F842461177F001D8C7C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DVM;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Karl Pfister";
 				TargetAttributes = {
 					FBCB8F8B2461177F001D8C7C = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -184,6 +201,9 @@
 				FBCB8F912461177F001D8C7C /* AppDelegate.m in Sources */,
 				FBCB8FA224611782001D8C7C /* main.m in Sources */,
 				FBCB8F942461177F001D8C7C /* SceneDelegate.m in Sources */,
+				FBCB8FAF24611FEB001D8C7C /* DVMPokemon.m in Sources */,
+				FBCB8FB524612ABD001D8C7C /* DVMPokemonViewController.swift in Sources */,
+				FBCB8FB2246122FF001D8C7C /* DVMPokemonController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
 				INFOPLIST_FILE = "Pokedex-C/Resources/Info.plist";
@@ -332,6 +353,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Devmountain.Pokedex-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pokedex-C/View Controllers/Pokedex-C-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -340,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
 				INFOPLIST_FILE = "Pokedex-C/Resources/Info.plist";
@@ -349,6 +374,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Devmountain.Pokedex-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pokedex-C/View Controllers/Pokedex-C-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
